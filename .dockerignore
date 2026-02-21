@@ -1,0 +1,4 @@
+bin/
+obj/
+coveragereport/
+Solver.Tests/TestResults/

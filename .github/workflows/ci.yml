@@ -44,9 +44,6 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Restore
-        run: dotnet restore
-
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
@@ -78,6 +75,6 @@ jobs:
         with:
           context: .
           push: false
-          tags: k-app:latest
+          tags: solver-app:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
